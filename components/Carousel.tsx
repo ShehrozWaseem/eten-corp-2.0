@@ -13,19 +13,19 @@ const slides: Slide[] = [
     id: 1,
     title: "Eten Corporation",
     subtitle: "A leading distributor in the meat industry, emphasizing quality assurance and customer satisfaction.",
-    bgImage: "/images/1.jpg"
+    bgImage: "/public/images/1.jpg"
   },
   {
     id: 2,
     title: "Quality Meats from Trusted Sources",
     subtitle: "Premium beef, chicken, and turkey sourced from reputable North American producers.",
-    bgImage: "/images/2.jpg"
+    bgImage: "/public/images/2.jpg"
   },
   {
     id: 3,
     title: "Halal Certified Products",
     subtitle: "Our commitment to halal integrity, with fully certified sourcing and handling.",
-    bgImage: "/images/3.png"
+    bgImage: "/public/images/3.png"
   }
 ];
 
