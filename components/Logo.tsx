@@ -8,7 +8,7 @@ const Logo: React.FC<{ className?: string }> = ({ className = '' }) => {
 <div className={`flex items-center gap-3 group transition-transform duration-300 ease-in-out hover:scale-105 ${className}`}>
   {/* The image part */}
   <div className="shadow-sm">
-    <img src="/public/images/logo.png" alt="Symbol" width="200" height="170" />
+    <img src="/images/logo.png" alt="Symbol" width="200" height="170" />
   </div>
   </div>
   );

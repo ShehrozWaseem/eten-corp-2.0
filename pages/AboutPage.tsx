@@ -54,7 +54,7 @@ const AboutPage: React.FC = () => {
     return (
     <div className="bg-white">
         {/* Hero Section */}
-        <section className="relative h-[50vh] bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/public/images/4.jpg')" }}>
+        <section className="relative h-[50vh] bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/images/4.jpg')" }}>
             <div className="absolute inset-0 bg-brand-secondary/70" />
             <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center">
                 <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight animate-fade-in">About Eten Corporation</h1>
@@ -115,7 +115,7 @@ const AboutPage: React.FC = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {/* Beef */}
                     <MeatSection title="Beef" icon={
-                        <img src="/public/images/cow.svg" alt="Symbol" width="70" height="70" />
+                        <img src="/images/cow.svg" alt="Symbol" width="70" height="70" />
                     }>
                         <CutList title="Trim" items={["Lean beef cuts for healthier options."]} />
                         <CutList title="Cuts by Weight Classification" items={["50s", "60s", "65s", "80s", "85s", "95s"]} />
@@ -123,7 +123,7 @@ const AboutPage: React.FC = () => {
 
                     {/* Turkey */}
                     <MeatSection title="Turkey" icon={
-                        <img src="/public/images/turkey.svg" alt="Symbol" width="70" height="70" />
+                        <img src="/images/turkey.svg" alt="Symbol" width="70" height="70" />
 
                     }>
                         <CutList title="White Meat" items={["Breast", "Ground Turkey", "Turkey Tenders", "Bone-in Tom, Hen, & Breeder"]} />
@@ -132,7 +132,7 @@ const AboutPage: React.FC = () => {
 
                     {/* Chicken */}
                     <MeatSection title="Chicken" icon={
-                        <img src="/public/images/chicken.svg" alt="Symbol" width="70" height="70" />
+                        <img src="/images/chicken.svg" alt="Symbol" width="70" height="70" />
 
                     }>
                          <CutList title="White Meat" items={["Ground Chicken", "Mechanically Deboned Meat (MDM)", "Bone-in Breast", "Boneless, Skinless Breast", "Chicken Tenders"]} />
