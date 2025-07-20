@@ -30,7 +30,7 @@ const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, onClose }) => 
       onClick={onClose}
     >
       <div
-        className="relative bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col md:flex-row overflow-hidden animate-modal-in"
+        className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto flex flex-col animate-modal-in"
         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal
       >
         <button
@@ -43,11 +43,7 @@ const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, onClose }) => 
           </svg>
         </button>
 
-        {/* <div className="w-full md:w-1/2 h-64 md:h-auto">
-          <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-        </div> */}
-
-        <div className="w-full md:w-1/2 p-8 overflow-y-auto">
+        <div className="p-8">
           <h2 className="text-3xl font-bold text-brand-secondary">{product.name}</h2>
           <p className="mt-4 text-brand-gray leading-relaxed">{product.description}</p>
           
