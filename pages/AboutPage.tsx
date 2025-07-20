@@ -65,7 +65,7 @@ const AboutPage: React.FC = () => {
         </section>
 
         {/* Our Story Section */}
-        <section className={`py-20 md:py-28 transition-opacity duration-1000 ${isVisible ? 'opacity-100 animate-slide-in-up' : 'opacity-0'}`}>
+        <section className={`py-20 md:py-20 transition-opacity duration-1000 ${isVisible ? 'opacity-100 animate-slide-in-up' : 'opacity-0'}`}>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
                     <div>
@@ -85,7 +85,7 @@ const AboutPage: React.FC = () => {
         </section>
         
         {/* Our Values Section */}
-        <section className="bg-brand-light py-20 md:py-28">
+        <section className="bg-brand-light py-12 md:py-12">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold text-brand-secondary tracking-tight">Our Core Values</h2>
@@ -106,7 +106,7 @@ const AboutPage: React.FC = () => {
         </section>
 
         {/* Our Products Section */}
-        <section className="py-20 md:py-28">
+        <section className="py-16 md:py-16">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold text-brand-secondary tracking-tight">Our Extensive Product Range</h2>
@@ -144,7 +144,7 @@ const AboutPage: React.FC = () => {
 
          {/* CTA Section */}
         <section className="bg-brand-secondary">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
                 <h2 className="text-3xl font-bold text-white">Ready to Experience the Eten Difference?</h2>
                 <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
                     Explore our interactive product catalog or get in touch with our team to discuss your specific needs.

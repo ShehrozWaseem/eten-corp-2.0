@@ -5,9 +5,9 @@ import ProductCard from '../components/ProductCard';
 import QuickViewModal from '../components/QuickViewModal';
 
 const categories: { key: ProductCategory; label: string, image: string, description: string }[] = [
-    { key: 'Beef', label: 'Beef', image: 'https://media.istockphoto.com/id/1167064450/photo/herd-of-steers-looking-at-camera.jpg?s=2048x2048&w=is&k=20&c=S2Xk0QbWCtf2MqDKaImCgjRy6FofWyUWtaW3kSqCy_g=', description: "Rich, flavorful, and sourced from top-tier farms." },
-    { key: 'Chicken', label: 'Chicken', image: 'https://media.istockphoto.com/id/1222803292/photo/pov-image-of-female-hands-feeding-red-hens-with-grain-poultry-farming-concept.jpg?s=2048x2048&w=is&k=20&c=OHNw-rM2T9L9W31Ssq0N7I4NCXoSXj_Jo1aX7uMSvTg=', description: "Versatile and tender, perfect for any dish." },
-    { key: 'Turkey', label: 'Turkey', image: 'https://media.gettyimages.com/id/1282780061/photo/turkey-farm-in-dorchester-england.jpg?s=1024x1024&w=gi&k=20&c=O-6UEmUXD53hG_9xEf3eCrJOumM2EDyRXrtqnwpT4FQ=', description: "Lean, wholesome, and ideal for healthy meals." },
+    { key: 'Beef', label: 'Beef', image: '/images/cow_prod.png', description: "Rich, flavorful, and sourced from top-tier farms." },
+    { key: 'Chicken', label: 'Chicken', image: '/images/chk_prod.png', description: "Versatile and tender, perfect for any dish." },
+    { key: 'Turkey', label: 'Turkey', image: '/images/turkey_prod.png', description: "Lean, wholesome, and ideal for healthy meals." },
 ];
 
 const OfferingsPage: React.FC = () => {
@@ -26,9 +26,6 @@ const OfferingsPage: React.FC = () => {
     return categories.filter(c => c.key !== selectedCategory);
   }, [selectedCategory]);
   
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [selectedCategory]);
 
   const productsForCategory = useMemo(() => {
     if (!selectedCategory) return [];
@@ -119,7 +116,7 @@ const OfferingsPage: React.FC = () => {
 
   return (
     <div className={`bg-white min-h-screen`}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 animate-slide-in-from-left">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-slide-in-from-left">
         <div className="mb-12">
             <button onClick={handleBackToCategories} className="text-brand-primary font-semibold hover:underline flex items-center group">
                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 transition-transform group-hover:-translate-x-1" viewBox="0 0 20 20" fill="currentColor">
@@ -148,7 +145,7 @@ const OfferingsPage: React.FC = () => {
       </div>
 
        {otherCategories.length > 0 && (
-          <section className="bg-brand-light py-16 md:py-24">
+          <section className="bg-brand-light py-10 md:py-10">
               <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                   <h2 className="text-3xl font-bold text-center text-brand-secondary tracking-tight mb-12">
                       Explore Other Categories

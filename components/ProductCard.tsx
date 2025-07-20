@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Product } from '../data/products';
 
@@ -12,8 +13,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onQuickView }) => {
             className="relative group flex items-center justify-center p-4 h-24 bg-gray-50 rounded-xl shadow-sm cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-brand-secondary border border-gray-200"
             onClick={() => onQuickView(product)}
         >
-            {/* Tooltip */}
-            <div className="absolute bottom-full mb-3 w-72 p-4 bg-brand-dark text-white text-left rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none z-20 transform group-hover:-translate-y-1">
+            {/* Tooltip - Hide on mobile */}
+            <div className="hidden md:block absolute bottom-full mb-3 w-72 p-4 bg-brand-dark text-white text-left rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none z-20 transform group-hover:-translate-y-1">
                 <h4 className="font-bold text-base border-b border-brand-accent/50 pb-1 mb-2">{product.name}</h4>
                 <p className="text-sm text-gray-300 mb-2">{product.description}</p>
                 <p className="text-sm"><span className="font-semibold text-brand-accent">Usage:</span> {product.usage}</p>

@@ -5,19 +5,19 @@ import { NavLink } from 'react-router-dom';
 const categories = [
   {
     name: 'Beef',
-    image: 'https://embed.widencdn.net/img/beef/lwh0bfs3nr/1120x840px/Butcher%201026.jpg?keep=c&u=nvwl20',
+    image: '/images/b_meat.jpeg',
     link: '/offerings/beef',
     description: 'From rich, marbled cuts to lean trims, our beef selection is sourced from top-tier North American farms.'
   },
   {
     name: 'Chicken',
-    image: 'https://thumbs.dreamstime.com/b/fresh-chicken-meat-wooden-board-top-view-83865597.jpg',
+    image: '/images/c_meat.jpeg',
     link: '/offerings/chicken',
     description: 'Discover versatile and tender chicken, perfect for any dish. We offer a full range of white and dark meat options.'
   },
   {
     name: 'Turkey',
-    image: 'https://t4.ftcdn.net/jpg/02/68/22/85/360_F_268228519_QyPhuIJrgdwE1bPvKeVS9aKHBHmBetou.jpg',
+    image: '/images/t_meat.jpeg',
     link: '/offerings/turkey',
     description: 'Explore our lean and wholesome turkey selections, ideal for healthy meals and festive holiday feasts.'
   }
@@ -25,16 +25,19 @@ const categories = [
 
 const ProductShowcase: React.FC = () => {
   return (
-    <section className="bg-brand-light py-20 md:py-28">
+    <section className="bg-brand-light py-8 md:py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-secondary tracking-tight">
-            Our Premium Selection
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-brand-gray">
-            Sourced from the best North American farms, delivered with care.
-          </p>
-        </div>
+        <section className={`py-8 md:py-8 bg-white`}>
+                <div className={`container mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${true ? 'opacity-100' : 'opacity-0'}`}>
+                    <div className={`max-w-4xl mx-auto text-center ${true ? 'animate-slide-in-up' : ''}`}>
+                        <h2 className="text-4xl md:text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-brand-primary to-brand-secondary">
+                        Our Premium Selection
+                        </h2>
+                        <p className="mt-6 text-lg text-brand-gray leading-relaxed">
+                        Sourced from the best North American farms, delivered with care.                        </p>
+                    </div>
+                </div>
+            </section>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {categories.map(category => (

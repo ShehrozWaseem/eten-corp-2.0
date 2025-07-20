@@ -55,7 +55,7 @@ const HomePage: React.FC = () => {
         <div className="bg-brand-light overflow-x-hidden">
             <Carousel />
             
-            <section className={`py-20 md:py-28 bg-white`}>
+            <section className={`py-20 md:py-22 bg-white`}>
                 <div className={`container mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
                     <div className={`max-w-4xl mx-auto text-center ${isVisible ? 'animate-slide-in-up' : ''}`}>
                         <h2 className="text-4xl md:text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-brand-primary to-brand-secondary">
@@ -68,7 +68,7 @@ const HomePage: React.FC = () => {
                 </div>
             </section>
 
-            <section className={`py-20 md:py-28 bg-brand-light`}>
+            <section className={`py-12 md:py-12 bg-brand-light`}>
                 <div className={`container mx-auto px-4 sm:px-6 lg:px-8 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
                     <div className="text-center mb-16">
                       <h2 className="text-4xl md:text-5xl font-bold text-brand-secondary tracking-tight">
@@ -93,7 +93,7 @@ const HomePage: React.FC = () => {
                 </div>
             </section>
 
-            <section className={`py-20 md:py-28 bg-white`}>
+            <section className={`py-12 md:py-12 bg-white`}>
                 <div className={`container mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
                     <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
                          <div className={`rounded-2xl overflow-hidden shadow-2xl transition-transform duration-500 hover:scale-105 ${isVisible ? 'animate-slide-in-from-left' : ''}`}>

@@ -43,9 +43,9 @@ const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, onClose }) => 
           </svg>
         </button>
 
-        <div className="w-full md:w-1/2 h-64 md:h-auto">
+        {/* <div className="w-full md:w-1/2 h-64 md:h-auto">
           <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-        </div>
+        </div> */}
 
         <div className="w-full md:w-1/2 p-8 overflow-y-auto">
           <h2 className="text-3xl font-bold text-brand-secondary">{product.name}</h2>

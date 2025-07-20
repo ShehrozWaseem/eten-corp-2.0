@@ -7,10 +7,12 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import OfferingsPage from './pages/OfferingsPage';
 import ContactPage from './pages/ContactPage';
+import ScrollToTop from './components/ScrollToTop';
 
 const App: React.FC = () => {
   return (
     <HashRouter>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-brand-light text-brand-secondary">
         <Header />
         <main className="flex-grow">
