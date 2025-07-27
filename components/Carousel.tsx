@@ -35,7 +35,7 @@ const Carousel: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 10000); // 10-second transition
+    }, 5000); // 10-second transition
 
     return () => clearTimeout(timer);
   }, [currentSlide]);

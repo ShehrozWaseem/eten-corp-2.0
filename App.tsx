@@ -1,18 +1,16 @@
 
 import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import OfferingsPage from './pages/OfferingsPage';
 import ContactPage from './pages/ContactPage';
-import ScrollToTop from './components/ScrollToTop';
 
 const App: React.FC = () => {
   return (
-    <HashRouter>
-      <ScrollToTop />
+    <BrowserRouter>
       <div className="flex flex-col min-h-screen bg-brand-light text-brand-secondary">
         <Header />
         <main className="flex-grow">
@@ -22,11 +20,12 @@ const App: React.FC = () => {
             <Route path="/offerings" element={<OfferingsPage />} />
             <Route path="/offerings/:category" element={<OfferingsPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
         <Footer />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
